@@ -6,9 +6,8 @@
         <span class="logo-city">{resourceFileContent path='img/logo-city.svg'}</span>
         <span class="logo-denkmal">{resourceFileContent path='img/logo-denkmal.svg'}</span>
       </a>
-      <div class="slogan">{translate 'What\'s up in Basel?!'}</div>
+      <div class="slogan">{translate 'What\'s up in {$region}?!' region=$render->getSite()->getRegion()->getName()|escape}</div>
     </div>
-
     {menu name='main' class='menu-header'}
   </div>
 

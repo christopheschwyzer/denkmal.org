@@ -1,1 +1,1 @@
-{translate '{$siteName} - Basel\'s event calendar. What\'s up in Basel and how does it sound?' siteName=$render->getSite()->getName()|escape}
+{translate '{$siteName} - Event calendar by locals. What\'s up in {$region} and how does it sound?' siteName=$render->getSite()->getName()|escape region=$render->getSite()->getRegion()->getName()|escape}
